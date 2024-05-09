@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div id="string-1" class="container">Ядра в вёдра, выдру в тундру!</div>
+    <div id="string-2" class="container">Выдрав с выдры в тундре гетры</div>
+    <div id="string-3" class="container">В недрах тундры, выдры в гетрах </div>
+    <div id="string-4" class="container">Вытру гетрой выдре морду </div>
+    <div id="string-5" class="container">Тырят в вёдра ядра кедров!</div>
+    <div id="string-6" class="container">Вытру выдрой ядра кедров</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var order = ["string-3", "string-5", "string-2", "string-6", "string-4", "string-1"];
+            order.forEach(function (id) {
+                console.log($("#" + id).text());
+            });
+        });
+    </script>
+</body>
+</html>
